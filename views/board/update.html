@@ -1,0 +1,25 @@
+{% include '../layout/top.html' %}
+{% for item in list%}
+
+<form action="/board/update?idx={{item.idx}}" method="post">
+    
+    <ul>
+        <li>TITLE</li>
+        <li><input type="text" name="title" value="{{item.subject}}"></li>
+    </ul>
+    <ul>
+        <li>WRITER</li>
+        <li><input type="text" name="writer" value="{{item.board_name}}"></li>
+    </ul>
+    <ul>
+        <li>
+            <textarea name="content" cols="30" rows="10">{{item.content}}</textarea>
+        </li>
+    </ul>
+    
+    <input type="submit" value="MODIFY" class="btn">
+    <a href="/board/list" class="btn">LIST</a>
+</form>
+{% endfor %}
+
+{% include '../layout/bottom.html' %}

@@ -1,0 +1,19 @@
+{% include '../layout/top.html' %}
+
+<form action="/board/write" method="post">
+    <ul>
+        <li><input type="text" name="title"></li>
+    </ul>
+    <ul>
+        <li><input type="text" name="writer"></li>
+    </ul>
+    <ul>
+        <li><textarea name="content" cols="30" rows="10"></textarea></li>
+    </ul>
+
+    <a href="/board/list">LIST</a>
+    <input type="submit" value="작성" class="btn">
+</form>
+
+
+{% include '../layout/bottom.html' %}

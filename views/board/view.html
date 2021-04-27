@@ -1,0 +1,21 @@
+{% include '../layout/top.html' %}
+
+    {%for item in list%}
+        <ul>
+            <li>TITLE : {{item.subject}}</li>
+        </ul>
+        <ul>
+            <li>WRITER : {{item.board_name}}</li>
+        </ul>
+        <ul>
+            <li>
+                {{item.content}}
+            </li>
+        </ul>
+
+        <a href="/board/list" class="write_btn">LIST</a>
+        <a href="/board/update?idx={{item.idx}}" class="btn">MODIFY</a>
+        <a href="/board/delete?idx={{item.idx}}" class="btn">DELETE</a>
+    {% endfor %}
+
+{% include '../layout/bottom.html' %}

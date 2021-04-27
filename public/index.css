@@ -1,0 +1,44 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+ul,li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.btn{
+    display: inline-block;
+    width: 70px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: #ddd;
+    cursor: pointer;
+    float: right;
+    text-align: center;
+    line-height: 30px;
+    box-sizing: border-box;
+    border: 2.5px solid rgba(10, 10, 10, 0.452);
+}
+
+table{
+    width: 500px;
+    height: 300px;
+    border: black;
+    margin-bottom: 15px;
+}
+
+tr,td{
+    margin-bottom: 10px;
+    border: 1px solid black;
+}
+
+.board{
+    width: 500px;
+    height: auto;
+}
+
